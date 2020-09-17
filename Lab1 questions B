@@ -1,0 +1,10 @@
+COVERAGE=40
+length=float(input("Enter the length of the room"))
+width=float(input("Enter the width of the room"))
+height=float(input("Enter the height of the room"))
+number_of_coats=float(input("Enter the number of coats"))
+surface_area=(2*length*height)+(2*width*height)+(width*length)
+coverage_needed=surface_area*number_of_coats
+cans_of_paints_required=coverage_needed/COVERAGE
+print("you will need",cans_of_paints_required,"cans to paint your room")
+
